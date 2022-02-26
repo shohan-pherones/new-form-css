@@ -2,4 +2,84 @@
 
 body{
     font-family: 'Convergence', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color:rgb(6, 184, 166);
+}
+.container{
+    width: 400px;
+    height: 620px;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    align-items: center;
+}
+.container .title{
+    text-align: center;
+}
+.container .title p{
+    color: rgba(0, 0, 0, 0.6);
+}
+.container .footer{
+    color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: small;
+    width: 75%;
+    padding-bottom: 20px;
+}
+.container .footer span{
+    color: rgb(6, 184, 166);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+}
+form input{
+    width: 300px;
+    height: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: 'Convergence', sans-serif;
+    font-size: 1.1em;
+    padding: 5px;
+    outline: none;
+}
+form label{
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.6);
+    padding-top: 15px;
+    padding-bottom: 5px;
+}
+form input:focus{
+    border: 1px solid rgb(6, 184, 166);
+    transition: border 0.3s ease;
+}
+form button{
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-family: 'Convergence', sans-serif;
+    border: none;
+    background-color: rgb(6, 184, 166);
+    color: whitesmoke;
+    padding: 7px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+form button:hover{
+    background-color: royalblue;
+    transition: all 0.3s ease;
 }
